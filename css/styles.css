@@ -1,0 +1,88 @@
+:root {
+    --color-primary-brand: #819B57;
+    --color-primary-dark: #31261A;
+    --color-primary-light: #FAF4EA;
+    --color-secondary-brand: #465929;
+    --color-secondary-dark: #A18268;
+    --color-secondary-light: #CFCFBC;
+}
+
+/* Base ---------------------------------------- */
+
+body {
+    color: var(--color-primary-dark);
+}
+
+ul {
+    list-style-type:none;
+}
+
+h2 {
+    color: var(--color-primary-dark);
+}
+
+/* Header ---------------------------------------- */
+
+.link {
+    color: var(--color-primary-light);
+}
+
+.link:hover {
+    color: var(--color-primary-brand);
+}
+
+/* Button ---------------------------------------- */
+
+.button {
+    color: var(--color-primary-light);
+    background-color: var(--color-primary-brand);
+    border-radius: 8px;
+    border: 2px solid var(--color-primary-brand);
+}
+
+.button:hover {
+    color: var(--color-secondary-brand);
+    background-color: transparent;
+}
+
+/* Hero ---------------------------------------- */
+
+.hero-title {
+    color: var(--color-primary-light);
+}
+
+.hero-title .accent {
+    color: var(--color-primary-brand);
+}
+
+/* Advantages ---------------------------------------- */
+
+.advantages-section {
+    background-color: var(--color-primary-brand);
+}
+
+.advantages-list {
+    color: var(--color-primary-light);
+}
+
+/* Traditions ---------------------------------------- */
+
+.traditions-section__paragraph--accent {
+    color: var(--color-primary-brand);
+}
+
+/* Chefs ---------------------------------------- */
+
+h2 .accent {
+    color: var(--color-secondary-brand);
+}
+
+/* Formats ---------------------------------------- */
+
+/* Contacts ---------------------------------------- */
+
+/* Footer ---------------------------------------- */
+
+.address__copy {
+    color: var(--color-primary-dark);
+}

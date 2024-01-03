@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern Bakery</title>
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header>
@@ -13,28 +14,40 @@
                 <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
             </a>
             <ul>
-                <li><a href="#">Наші традиції</a></li>
-                <li><a href="#">Шеф-кухарі</a></li>
-                <li><a href="#">Формати</a></li>
-                <li><a href="#">Контакти</a></li>
+                <li><a class="link" href="#">Наші традиції</a></li>
+                <li><a class="link" href="#">Шеф-кухарі</a></li>
+                <li><a class="link" href="#">Формати</a></li>
+                <li><a class="link" href="#">Контакти</a></li>
             </ul>
         </nav>
-        <button type="button">Замовити дзвінок</button>
+        <button class="button" type="button">Замовити дзвінок</button>
     </header>
     <main>
+        <!-- Hero -->
         <section class="hero">
-            <h1>Сучасна пекарня</h1>
+            <h1 class="hero-title"><span class="accent">Сучасна</span> пекарня</h1>
         </section>
-        <section>
-            <h2>Новий формат традицій</h2>
-            <p> <span>shop bakery</span> — це пекарня, яка взяла все найкраще, 
+        <!-- Advantages -->
+        <section class="advantages-section">
+            <ul class="advantages-list">
+                <li>Великий попит на ринку</li>
+                <li>Доступні за бюджетом формати</li>
+                <li>Досвідчена управлінська команда</li>
+            </ul>
+        </section>
+        <!-- Traditions -->
+        <section class="traditions-section">
+            <h2 class="traditions-section__title">Новий формат традицій</h2>
+            <p class="traditions-section__paragraph"> <span class="traditions-section__paragraph--accent">shop bakery</span> — це пекарня, яка взяла все найкраще, 
                 і зберегла смак традиційної випічки та натуральність інгредієнтів.</p>
-            <p>Ми працюємо як найвідоміші мережі — <span>5 хвилин і замовлення готове</span>.
+            <p class="traditions-section__paragraph">Ми працюємо як найвідоміші мережі — 
+                <span class="traditions-section__paragraph--accent">5 хвилин і замовлення готове</span>.
                 А ще у наших пекарень стильний дизайн та висока якість обслуговування!</p>
-            <img src="./images/baker-man.jpg" alt="Пекар посміхається та дивиться на батони">
+            <img class="traditions-section__image" src="./images/baker-man.jpg" alt="Пекар посміхається та дивиться на батони">
         </section>
+        <!-- Chefs -->
         <section>
-            <h2>Наші найкращі шеф-кухарі</h2>
+            <h2>Наші найкращі <span class="accent">шеф-кухарі</span></h2>
             <ul>
                 <li>
                     <article>
@@ -56,6 +69,7 @@
                 </li>
             </ul>
         </section>
+        <!-- Formats -->
         <section>
             <h2>Формати</h2>
             <ul>
@@ -64,12 +78,14 @@
                 <li>Handlebar</li>
             </ul>
         </section>
+        <!-- Contacts -->
         <section>
             <h2>Приєднуйся до мережі пекарень</h2>
             <p>Заповни форму, щоб ми звʼязались з тобою!</p>
         </section>
     </main>
-    <footer>
+    <!-- Footer -->
+    <footer class="footer">
         <nav>
             <a href="/">
                 <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
@@ -81,7 +97,7 @@
                 <li><a href="#">Контакти</a></li>
             </ul>
         </nav>
-        <address>
+        <address class="address">
             <ul>
                 <li><a href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
                 <li><a href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a></li>
@@ -91,7 +107,7 @@
                 <li><a href="https://www.instagram.com/">Instagram</a></li>
             </ul>
             <a href="#">Політика конфіденційності</a>
-            <p>&copy; 2022 Дані захищені</p>
+            <p class="address__copy">&copy; 2022 Дані захищені</p>
         </address>
     </footer>
 </body>
