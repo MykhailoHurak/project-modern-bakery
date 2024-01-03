@@ -53,6 +53,7 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.5;
+    margin: 0;
 
     background-color: rgb(187, 187, 187);
 }
@@ -61,8 +62,34 @@ ul {
     list-style-type:none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
 h2 {
     color: var(--color-primary-dark);
+}
+
+.visually-hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Section ---------------------------------------- */
+
+.section {
+    padding: 48px 0;
 }
 
 .section__title {
@@ -90,6 +117,7 @@ h2 {
     background-color: var(--color-primary-brand);
     border-radius: 8px;
     border: 2px solid var(--color-primary-brand);
+    padding: 16px 32px;
 }
 
 .button:hover {
@@ -99,11 +127,15 @@ h2 {
 
 /* Hero ---------------------------------------- */
 
+.hero {
+    padding: 272px 0;
+}
+
 .hero-title {
     color: var(--color-primary-light);
     text-align: center;
     font-size: 128px;
-    font-weight: 900;
+    font-weight: 600;
 }
 
 .hero-title .accent {
@@ -112,8 +144,9 @@ h2 {
 
 /* Advantages ---------------------------------------- */
 
-.advantages-section {
+.advantages {
     background-color: var(--color-primary-brand);
+    padding: 16px 0;
 }
 
 .advantages-list {
@@ -124,16 +157,28 @@ h2 {
 
 /* Traditions ---------------------------------------- */
 
-.traditions-section__paragraph--accent {
+.traditions {
+    padding-top: 96px;
+}
+
+.traditions__title {
+    margin-bottom: 42px;
+}
+
+.traditions__paragraph--accent {
     color: var(--color-primary-brand);
 }
 
-.traditions-section__paragraph--uppercase {
+.traditions__paragraph--uppercase {
     text-transform: uppercase;
     font-weight: 600;
 }
 
 /* Chefs ---------------------------------------- */
+
+.chefs__title {
+    margin-bottom: 80px;
+}
 
 h2 .accent {
     color: var(--color-secondary-brand);
@@ -141,9 +186,14 @@ h2 .accent {
 
 .chef-card__title {
     font-size: 40px;
+    margin-bottom: 16px;
 }
 
 /* Formats ---------------------------------------- */
+
+.formats__title {
+    margin-bottom: 80px;
+}
 
 .format-card__title {
     font-size: 24px;
@@ -156,6 +206,10 @@ h2 .accent {
 }
 
 /* Contacts ---------------------------------------- */
+
+.contacts__title {
+    margin-bottom: 16px;
+}
 
 /* Footer ---------------------------------------- */
 
@@ -171,6 +225,15 @@ h2 .accent {
 }
 
 .address__link:hover {
+    color: var(--color-primary-brand);
+}
+
+.address__privacy-policy {
+    color: var(--color-primary-light);
+    text-decoration: none;
+}
+
+.address__privacy-policy:hover {
     color: var(--color-primary-brand);
 }
 
