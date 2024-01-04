@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
             <div class="header__container">
                 <nav class="header__nav">
@@ -42,25 +42,29 @@
         <section class="advantages section">
             <div class="container">
                 <h2 class="visually-hidden">Наші переваги</h2>
-                <ul class="advantages-list">
-                    <li>Великий попит на ринку</li>
-                    <li>Доступні за бюджетом формати</li>
-                    <li>Досвідчена управлінська команда</li>
+                <ul class="advantages__list">
+                    <li class="advantages__item">Великий попит на ринку</li>
+                    <li class="advantages__item">Доступні за бюджетом формати</li>
+                    <li class="advantages__item">Досвідчена управлінська команда</li>
                 </ul>
             </div>
         </section>
         <!-- Traditions -->
         <section class="traditions section">
             <div class="container">
-                <h2 class="traditions__title section__title">Новий формат традицій</h2>
-                <p class="traditions__paragraph"> <span class="traditions__paragraph--accent traditions__paragraph--uppercase">shop
-                    bakery</span> — це пекарня, яка взяла все найкраще,
-                    і зберегла смак традиційної випічки та натуральність інгредієнтів.</p>
-                <p class="traditions__paragraph">Ми працюємо як найвідоміші мережі —
-                    <span class="traditions__paragraph--accent">5 хвилин і замовлення готове</span>.
-                    А ще у наших пекарень стильний дизайн та висока якість обслуговування!
-                </p>
-                <img class="traditions__image" src="./images/baker-man.jpg" alt="Пекар посміхається та дивиться на батони">
+                <div class="traditions__container">
+                    <div class="traditions__content">
+                        <h2 class="traditions__title section__title">Новий формат традицій</h2>
+                        <p class="traditions__paragraph"> <span class="traditions__paragraph--accent traditions__paragraph--uppercase">shop
+                                bakery</span> — це пекарня, яка взяла все найкраще,
+                            і зберегла смак традиційної випічки та натуральність інгредієнтів.</p>
+                        <p class="traditions__paragraph traditions__paragraph--limited-width">Ми працюємо як найвідоміші мережі —
+                            <span class="traditions__paragraph--accent">5 хвилин і замовлення готове</span>.
+                            А ще у наших пекарень стильний дизайн та висока якість обслуговування!
+                        </p>
+                    </div>
+                    <img class="traditions__image" src="./images/baker-man.jpg" alt="Пекар посміхається та дивиться на батони">
+                </div>
             </div>
         </section>
         <!-- Chefs -->
@@ -94,8 +98,8 @@
         <section class="formats section">
             <div class="container">
                 <h2 class="formats__title section__title">Формати</h2>
-                <ul>
-                    <li>
+                <ul class="formats__list">
+                    <li class="formats__item">
                         <article class="format-card">
                             <h3 class="format-card__title">Walrus</h3>
                             <div class="format-card__paragraph">
@@ -106,7 +110,7 @@
                             </div>
                         </article>
                     </li>
-                    <li>
+                    <li class="formats__item">
                         <article class="format-card">
                             <h3 class="format-card__title">Horseshoe</h3>
                             <div class="format-card__paragraph">
@@ -117,7 +121,7 @@
                             </div>
                         </article>
                     </li>
-                    <li>
+                    <li class="formats__item">
                         <article class="format-card">
                             <h3 class="format-card__title">Handlebar</h3>
                             <div class="format-card__paragraph">

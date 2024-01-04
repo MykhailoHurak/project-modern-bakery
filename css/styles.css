@@ -101,6 +101,10 @@ h2 {
 
 /* Header ---------------------------------------- */
 
+.header {
+    background-color:darkorange;
+}
+
 .header__container {
     display: flex;
     align-items: center;
@@ -172,7 +176,13 @@ h2 {
     padding: 16px 0;
 }
 
-.advantages-list {
+.advantages__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.advantages__item {
     color: var(--color-primary-light);
     font-size: 20px;
     font-weight: 300;
@@ -184,8 +194,22 @@ h2 {
     padding-top: 96px;
 }
 
+.traditions__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.traditions__content {
+    max-width: 710px;
+}
+
 .traditions__title {
     margin-bottom: 42px;
+}
+
+.traditions__paragraph--limited-width {
+    max-width: 340px;
 }
 
 .traditions__paragraph--accent {
@@ -216,6 +240,21 @@ h2 .accent {
 
 .formats__title {
     margin-bottom: 80px;
+}
+
+.formats__list {
+    display: flex;
+    gap: 20px;
+}
+
+.formats__item {
+    width: calc((100% - 40px) / 3);
+}
+
+.format-card {
+    padding: 24px;
+    border: 1px solid black;
+    border-radius: 16px;
 }
 
 .format-card__title {
