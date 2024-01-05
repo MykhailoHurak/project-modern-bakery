@@ -55,7 +55,7 @@ body {
     line-height: 1.5;
     margin: 0;
 
-    background-color: rgb(187, 187, 187);
+    background-color: var(--color-primary-light);
 }
 
 ul {
@@ -156,6 +156,10 @@ h2 {
 
 .hero {
     padding: 272px 0;
+    background-image: url('../images/hero-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
 }
 
 .hero-title {
@@ -221,10 +225,24 @@ h2 {
     font-weight: 600;
 }
 
+.traditions__image {
+    border-radius: 400px 400px 0px 0px;
+}
+
 /* Chefs ---------------------------------------- */
 
 .chefs__title {
-    margin-bottom: 80px;
+    margin: 0 auto 80px;
+    max-width: 520px;
+    text-align: center;
+}
+
+.chefs__title::after,
+.chefs__title::before {
+    display: block;
+    content: '';
+    width: 132px;
+    border: 2px solid var(--color-secondary-light);
 }
 
 h2 .accent {
@@ -234,6 +252,11 @@ h2 .accent {
 .chef-card__title {
     font-size: 40px;
     margin-bottom: 16px;
+}
+
+.chef-card__photo {
+    border-radius: 4px 4px 4px 200px;
+    box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--color-secondary-dark);
 }
 
 /* Formats ---------------------------------------- */
@@ -252,9 +275,15 @@ h2 .accent {
 }
 
 .format-card {
+    height: 444px;
     padding: 24px;
     border: 1px solid black;
     border-radius: 16px;
+    background-image: linear-gradient(
+        180deg, 
+        rgba(49, 38, 26, 0.00) 55.21%, 
+        rgba(49, 38, 26, 0.71) 72.92%,    
+        var(--color-primary-dark) 100%);
 }
 
 .format-card__title {
@@ -274,6 +303,14 @@ h2 .accent {
 }
 
 /* Footer ---------------------------------------- */
+
+.footer {
+    background-image: url('../images/footer-background.png');
+    background-color: var(--color-primary-dark);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
 .address {
     color: var(--color-primary-light);
