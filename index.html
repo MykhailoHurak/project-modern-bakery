@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +13,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
     <header class="header">
         <div class="container">
@@ -21,7 +23,7 @@
                         <img src="./images/logo.svg" alt="Modern bakery logo" />
                     </a>
                     <ul class="header__menu">
-                        <li><a class="link" href="#traditions">Taditions</a></li>
+                        <li><a class="link" href="#traditions">Traditions</a></li>
                         <li><a class="link" href="#chefs">Chefs</a></li>
                         <li><a class="link" href="#formats">Formats</a></li>
                         <li><a class="link" href="#contacts">Contacts</a></li>
@@ -55,18 +57,20 @@
                 <div class="traditions__container">
                     <div class="traditions__content">
                         <h2 class="traditions__title section__title">A new format of traditions</h2>
-                        <p class="traditions__paragraph"> <span class="traditions__paragraph--accent traditions__paragraph--uppercase">
-                            shop bakery</span> is a bakery that took all the best,
-                            and preserved the taste of traditional baking 
+                        <p class="traditions__paragraph"> <span
+                                class="traditions__paragraph--accent traditions__paragraph--uppercase">
+                                shop bakery</span> is a bakery that took all the best,
+                            and preserved the taste of traditional baking
                             and the naturalness of the ingredients.
                         </p>
                         <p class="traditions__paragraph traditions__paragraph--limited-width">
-                            We work as the most famous networks — 
+                            We work as the most famous networks —
                             <span class="traditions__paragraph--accent">5 minutes and the order is ready</span>.
                             And our bakeries have a stylish design and high quality service!
                         </p>
                     </div>
-                    <img class="traditions__image" src="./images/baker-man.jpg" alt="The baker smiles and looks at the loaves">
+                    <img class="traditions__image" src="./images/baker-man.jpg"
+                        alt="The baker smiles and looks at the loaves">
                 </div>
             </div>
         </section>
@@ -89,7 +93,8 @@
                             <img class="chef-card__photo" src="./images/chef-vlad.jpg" alt="Шеф-кухар Влад">
                             <h3 class="chef-card__title">Влад</h3>
                             <p class="chef-card__paragraph">Привіт, я Влад!</p>
-                            <p class="chef-card__paragraph">Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша любов, з якою ми
+                            <p class="chef-card__paragraph">Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша
+                                любов, з якою ми
                                 ділимось кожен раз з Вами через нашу випічку!</p>
                             <p class="chef-card__paragraph">Я зроблю для вас унікальну начинку на будь який смак!</p>
                         </article>
@@ -101,6 +106,11 @@
         <section class="formats section" id="formats">
             <div class="container">
                 <h2 class="formats__title section__title">Формати</h2>
+                <button class="formats__btn" type="button">
+                    <svg class="formats__icon" width="16" height="16">
+                        <use href="./images/icons.svg#icon-arrow"></use>
+                    </svg>
+                </button>
                 <ul class="formats__list">
                     <li class="formats__item">
                         <article class="format-card">
@@ -169,11 +179,20 @@
                 <ul>
                     <li><a class="address__link" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
                     <li><a class="address__link" href="mailto:shopbakery@gmail.com">shopbakery@gmail.com</a></li>
-                    <li><a class="address__link" href="https://maps.app.goo.gl/ePc4ZXeBL8Lfi8qA7" target="_blank"></a>Україна, м.
+                    <li><a class="address__link" href="https://maps.app.goo.gl/ePc4ZXeBL8Lfi8qA7"
+                            target="_blank"></a>Україна, м.
                         Київ,
                         вул. Січових Стрільців 54</li>
-                    <li><a href="https://www.facebook.com/">Facebook</a></li>
-                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank">
+                            <svg class="address-icon" width="32" height="32">
+                                <use href="./images/icons.svg#icon-facebook"></use>
+                            </svg>
+                        </a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank">
+                            <svg class="address-icon" width="32" height="32">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a></li>
                 </ul>
                 <a class="address__privacy-policy" href="#" target="_blank">Політика конфіденційності</a>
                 <p class="address__copyright">&copy; 2022 Дані захищені</p>
@@ -181,4 +200,5 @@
         </div>
     </footer>
 </body>
+
 </html>
