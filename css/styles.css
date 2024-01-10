@@ -246,17 +246,29 @@ p {
 /* Chefs ---------------------------------------- */
 
 .chefs__title {
+    position: relative;
     margin: 0 auto 80px;
-    max-width: 520px;
     text-align: center;
 }
 
-.chefs__title::after,
-.chefs__title::before {
+.chefs__title::before,
+.chefs__title::after {
     display: block;
     content: '';
-    width: 132px;
+    width: 352px;
     border: 2px solid var(--color-secondary-light);
+}
+
+.chefs__title::before {
+    position:absolute;
+    left: 0;
+    bottom: 24px;
+}
+
+.chefs__title::after {
+    position: absolute;
+    right: 0;
+    bottom: 24px;
 }
 
 h2 .accent {
@@ -390,12 +402,33 @@ h2 .accent {
 /* Footer ---------------------------------------- */
 
 .footer {
+    position: relative;
     padding: 32px 0;
     background-image: url('../images/footer-background.png');
     background-color: var(--color-primary-dark);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+.footer::before {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 180px;
+    height: 120px;
+    background-image: url('../images/footer-bread-small.png');
+    content: '';
+}
+
+.footer::after {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 380px;
+    height: 190px;
+    background-image: url('../images/footer-bread-large.png');
+    content: '';
 }
 
 .footer__container {
@@ -457,4 +490,40 @@ h2 .accent {
 .address__copyright {
     color: var(--color-primary-dark);
     font-size: 14px;
+}
+
+/* Modal ---------------------------------------- */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.backdrop.is-hidden {
+    /* display: none; */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.modal {
+    position: relative;
+    width: 440px;
+    height: 440px;
+    background-color: var(--color-primary-light);
+    border-radius: 32px;
+}
+
+.modal-btn-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    border-radius: 50%;
 }
