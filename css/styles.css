@@ -116,7 +116,11 @@ p {
 /* Header ---------------------------------------- */
 
 .header {
-    background-color:darkorange;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 32px;
 }
 
 .header__container {
@@ -143,6 +147,7 @@ p {
 .link {
     color: var(--color-primary-light);
     text-decoration:none;
+    transition: color 0.3s;
 }
 
 .link:hover {
@@ -170,7 +175,8 @@ p {
 
 .hero {
     padding: 272px 0;
-    background-image: url('../images/hero-background.jpg');
+    background-image: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.60) 58.46%, rgba(18, 18, 17, 0.00) 90.36%), 
+        url('../images/hero-background.jpg');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -341,6 +347,10 @@ h2 .accent {
     fill: var(--color-primary-light);
 }
 
+.formats__btn--rotate {
+    transform: rotate(180deg);
+}
+
 .formats__list {
     display: flex;
     gap: 20px;
@@ -360,6 +370,11 @@ h2 .accent {
         rgba(49, 38, 26, 0.00) 55.21%, 
         rgba(49, 38, 26, 0.71) 72.92%,    
         var(--color-primary-dark) 100%);
+    transition: transform 0.3s;
+}
+
+.format-card:hover {
+    transform: scale(1.05);
 }
 
 .format-card__title {
@@ -500,10 +515,12 @@ h2 .accent {
     right: 0;
     bottom: 0;
     left: 0;
+    padding: 20px 0;
     background-color: rgba(0, 0, 0, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: opacity 0.3s, visibility 0.3s;
 }
 
 .backdrop.is-hidden {
@@ -515,8 +532,10 @@ h2 .accent {
 
 .modal {
     position: relative;
-    width: 440px;
-    height: 440px;
+    width: 100%;
+    max-width: 880px;
+    height: 100%;
+    max-height: 880px;
     background-color: var(--color-primary-light);
     border-radius: 32px;
 }
