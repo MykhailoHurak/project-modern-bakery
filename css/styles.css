@@ -536,8 +536,10 @@ h2 .accent {
     max-width: 880px;
     height: 100%;
     max-height: 880px;
+    padding: 128px;
     background-color: var(--color-primary-light);
     border-radius: 32px;
+    /* overflow: auto; */
 }
 
 .modal-btn-close {
@@ -545,4 +547,56 @@ h2 .accent {
     top: 40px;
     right: 40px;
     border-radius: 50%;
+}
+
+/* Form ---------------------------------------- */
+
+.form-field {
+    margin-bottom: 32px;
+}
+
+.form-label {
+    display: block;
+}
+
+.form-input {
+    padding: 14px 42px;
+    width: 100%;
+    border: 1px solid var(--color-secondary-dark);
+    border-radius: 8px;
+    background-color: transparent;
+    color: var(--color-primary-dark);
+}
+
+.form-input:focus {
+    /* background-color: var(--color-primary-light); */
+    border-color: var(--color-primary-brand);
+    outline: none;
+}
+
+.form-input::placeholder {
+    color: var(--color-secondary-dark);
+}
+
+.form-input:focus::placeholder {
+    color: var(--color-secondary-dark);
+}
+
+.form-button {
+    display: block;
+    margin: 0 auto 24px;
+}
+
+.form-terms {
+    margin: 0 auto;
+    max-width: 220px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.form-terms-link {
+    color: var(--color-primary-dark);
+    text-underline-offset: 2px;
 }
