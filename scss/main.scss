@@ -1,80 +1,23 @@
-/* Link ---------------------------------------- */
-
-@import './utils/fonts';
-
-/* Variables ---------------------------------------- */
-
-@import './utils/variables';
-
-/* Base ---------------------------------------- */
-
 @import './base';
+@import './utils/fonts';
+@import './utils/variables';
 @import './utils/utils';
+@import './utils/texts';
 
+@import './components/container';
+@import './components/section';
 
-
-.container {
-    width: 100%;
-    max-width: 1288px;
-    margin: 0 auto;
-    padding: 0 24px;
-}
-
-/* Section ---------------------------------------- */
-
-.section {
-    padding: 48px 0;
-}
-
-.section__title {
-    font-size: 64px;
-    line-height: 1.3;
-}
-
-/* Header ---------------------------------------- */
-
-@import './components/header';
-
-/* Link ---------------------------------------- */
-
+@import './layout/header';
 @import './components/links';
-
-/* Button ---------------------------------------- */
-
 @import './components/buttons';
 
-/* Hero ---------------------------------------- */
+@import './layout/hero';
+@import './layout/advantages';
+@import './layout/traditions';
+@import './layout/chefs';
+@import './layout/formats';
+@import './layout/contacts';
 
-@import './components/hero';
-
-/* Advantages ---------------------------------------- */
-
-@import './components/advantages';
-
-/* Traditions ---------------------------------------- */
-
-@import './components/traditions';
-
-/* Chefs ---------------------------------------- */
-
-@import './components/chefs';
-
-/* Formats ---------------------------------------- */
-
-@import './components/formats';
-
-/* Contacts ---------------------------------------- */
-
-@import './components/contacts';
-
-/* Footer ---------------------------------------- */
-
-@import './components/footer';
-
-/* Modal ---------------------------------------- */
+@import './layout/footer';
 
 @import './components/modal';
-
-/* Form ---------------------------------------- */
-
-@import './components/forms';

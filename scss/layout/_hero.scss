@@ -5,15 +5,11 @@
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
-}
 
-.hero-title {
-    color: var(--color-primary-light);
-    text-align: center;
-    font-size: 128px;
-    font-weight: 600;
-}
-
-.hero-title .accent {
-    color: var(--color-primary-brand);
+    &__title {
+        color: var(--color-primary-light);
+        text-align: center;
+        font-size: 128px;
+        font-weight: 600;
+    }
 }
