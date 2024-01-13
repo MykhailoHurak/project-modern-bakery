@@ -1,0 +1,34 @@
+.traditions {
+    padding-top: 96px;
+}
+
+.traditions__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.traditions__content {
+    max-width: 710px;
+}
+
+.traditions__title {
+    margin-bottom: 42px;
+}
+
+.traditions__paragraph--limited-width {
+    max-width: 340px;
+}
+
+.traditions__paragraph--accent {
+    color: var(--color-primary-brand);
+}
+
+.traditions__paragraph--uppercase {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.traditions__image {
+    border-radius: 400px 400px 0px 0px;
+}

@@ -1,0 +1,14 @@
+.button {
+    color: var(--color-primary-light);
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--color-primary-brand);
+    border-radius: 8px;
+    border: 2px solid var(--color-primary-brand);
+    padding: 16px 32px;
+}
+
+.button:hover {
+    color: var(--color-secondary-brand);
+    background-color: transparent;
+}

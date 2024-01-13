@@ -1,0 +1,80 @@
+/* Link ---------------------------------------- */
+
+@import './utils/fonts';
+
+/* Variables ---------------------------------------- */
+
+@import './utils/variables';
+
+/* Base ---------------------------------------- */
+
+@import './base';
+@import './utils/utils';
+
+
+
+.container {
+    width: 100%;
+    max-width: 1288px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Section ---------------------------------------- */
+
+.section {
+    padding: 48px 0;
+}
+
+.section__title {
+    font-size: 64px;
+    line-height: 1.3;
+}
+
+/* Header ---------------------------------------- */
+
+@import './components/header';
+
+/* Link ---------------------------------------- */
+
+@import './components/links';
+
+/* Button ---------------------------------------- */
+
+@import './components/buttons';
+
+/* Hero ---------------------------------------- */
+
+@import './components/hero';
+
+/* Advantages ---------------------------------------- */
+
+@import './components/advantages';
+
+/* Traditions ---------------------------------------- */
+
+@import './components/traditions';
+
+/* Chefs ---------------------------------------- */
+
+@import './components/chefs';
+
+/* Formats ---------------------------------------- */
+
+@import './components/formats';
+
+/* Contacts ---------------------------------------- */
+
+@import './components/contacts';
+
+/* Footer ---------------------------------------- */
+
+@import './components/footer';
+
+/* Modal ---------------------------------------- */
+
+@import './components/modal';
+
+/* Form ---------------------------------------- */
+
+@import './components/forms';
