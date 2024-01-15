@@ -20,8 +20,8 @@
         <div class="container">
             <div class="header__container">
                 <nav class="header__nav">
-                    <a href="/">
-                        <img src="./images/logo.svg" alt="Modern bakery logo" />
+                    <a class="header__logo" href="/">
+                        <img class="header__logo-img" src="./images/logo.svg" alt="Modern bakery logo" />
                     </a>
                     <ul class="header__menu">
                         <li><a class="link" href="#traditions">Traditions</a></li>
@@ -30,7 +30,15 @@
                         <li><a class="link" href="#contacts">Contacts</a></li>
                     </ul>
                 </nav>
-                <button class="button modal-btn-open" type="button">Order a call</button>
+                <button class="header__button button modal-btn-open" type="button">Order a call</button>
+                <button class="header__menu-mobile mob-menu-btn-open" type="button">
+                    <svg width="32" height="32">
+                        <use href="./images/icons.svg#icon-menu-mobile"></use>
+                    </svg>
+                </button>
+                <div class="mob-menu">
+                    <button class="mob-menu-btn-close" type="button">x</button>
+                </div>
             </div>
         </div>
     </header>
@@ -39,10 +47,11 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero__title"><span class="text-color-primary-brand">Modern</span> bakery</h1>
+                <button class="hero__button button modal-btn-open" type="button">Order a call</button>
             </div>
         </section>
         <!-- Advantages -->
-        <section class="advantages section">
+        <!-- <section class="advantages section">
             <div class="container">
                 <h2 class="visually-hidden">Our advantages</h2>
                 <ul class="advantages__list">
@@ -51,9 +60,9 @@
                     <li class="advantages__item">Experienced management team</li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- Traditions -->
-        <section class="traditions section" id="traditions">
+        <!-- <section class="traditions section" id="traditions">
             <div class="container">
                 <div class="traditions__container">
                     <div class="traditions__content">
@@ -74,9 +83,9 @@
                         alt="The baker smiles and looks at the loaves">
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Chefs -->
-        <section class="chefs section" id="chefs">
+        <!-- <section class="chefs section" id="chefs">
             <div class="container">
                 <h2 class="chefs__title section__title">Наші найкращі <br> <span class="text-color-secondary-brand">шеф-кухарі</span></h2>
                 <ul class="chefs__list">
@@ -105,9 +114,9 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
         <!-- Formats -->
-        <section class="formats section" id="formats">
+        <!-- <section class="formats section" id="formats">
             <div class="container">
                 <h2 class="formats__title section__title">Формати</h2>
                 <div class="formats__container">
@@ -161,9 +170,9 @@
                     </button>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Contacts -->
-        <section class="contacts section" id="contacts">
+        <!-- <section class="contacts section" id="contacts">
             <div class="container">
                 <div class="contacts__container">
                     <div class="contacts__form">
@@ -200,10 +209,10 @@
 
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
     <!-- Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="container">
             <div class="footer__container">
                 <nav class="footer__nav">
@@ -244,7 +253,7 @@
                 </address>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!-- Modal -->
     <div class="backdrop is-hidden">
         <div class="modal">
@@ -274,6 +283,7 @@
             </form>
         </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 

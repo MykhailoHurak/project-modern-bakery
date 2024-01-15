@@ -19,10 +19,50 @@
          gap: 40px;
     }
 
+    &__logo-img {
+        width: 72px;
+        height: 38px;
+
+        @media screen and (min-width: $bp-tablet) {
+            width: 93px;
+            height: 47px;
+        }
+
+        @media screen and (min-width: $bp-desktop) {
+            width: 114px;
+            height: 56px;
+        }
+    }
+
     &__menu {
-        display: flex;
-        gap: 64px;
-        flex-grow: 1;
-        justify-content: center;
+        display: none;
+
+        @media screen and (min-width: $bp-desktop)  {
+            display: flex;
+            gap: 64px;
+            flex-grow: 1;
+            justify-content: center;
+        }
+    }
+
+    &__button {
+        display: none;
+
+        @media screen and (min-width: $bp-desktop) {
+            display: block;
+        }
+    }
+
+    &__menu-mobile {
+        width: 32px;
+        height: 32px;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        fill: var(--color-primary-light);
+        
+        @media screen and (min-width: $bp-desktop) {
+            display: none;
+        }
     }
 }
