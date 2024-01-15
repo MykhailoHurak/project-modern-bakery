@@ -1,27 +1,35 @@
 .hero {
-    padding: 272px 0;
+    padding: 122px 0 32px;
     background-image: linear-gradient(103deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.60) 58.46%, rgba(18, 18, 17, 0.00) 90.36%),
         url('../images/hero-background.jpg');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
 
+    @media screen and (min-width: 768px) {
+        padding: 160px 0 60px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding: 272px 0;
+    }
+
     &__title {
         color: var(--color-primary-light);
         text-align: center;
         font-size: 64px;
-        line-height: 1;
+        line-height: 1.15;
         margin-bottom: 48px;
 
         @media screen and (min-width: $bp-tablet) {
-            font-size: 88px;
-            line-height: 1.1;
+            font-size: 80px;
         }
 
         @media screen and (min-width: $bp-desktop) {
             font-size: 128px;
             // font-weight: 600;
             line-height: 1.15;
+            margin-bottom: 0;
         }
     }
 
