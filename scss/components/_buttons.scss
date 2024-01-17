@@ -1,11 +1,21 @@
 .button {
     color: var(--color-primary-light);
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 600;
     background-color: var(--color-primary-brand);
     border-radius: 8px;
     border: 2px solid var(--color-primary-brand);
-    padding: 16px 32px;
+    padding: 12px 24px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+        padding: 14px 28px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        font-size: 18px;
+        padding: 16px 32px;
+    }
 }
 
 .button:hover {
