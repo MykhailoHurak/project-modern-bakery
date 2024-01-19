@@ -37,6 +37,7 @@
         display: block;
         margin: 0 auto;
         padding: 16px 24px;
+        cursor: pointer;
     
         @media screen and (min-width: $bp-desktop) {
             display: none;
