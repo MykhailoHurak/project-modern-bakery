@@ -4,12 +4,20 @@
     right: 0;
     bottom: 0;
     left: 0;
-    padding: 20px 0;
+    padding: 10px 10px;
     background-color: rgba(0, 0, 0, 0.9);
     display: flex;
     align-items: center;
     justify-content: center;
     transition: opacity 0.3s, visibility 0.3s;
+
+    @media screen and (min-width: 768px) {
+        padding: 20px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding: 72px;
+    }
 }
 
 .backdrop.is-hidden {
@@ -21,16 +29,83 @@
 .modal {
     position: relative;
     width: 100%;
-    max-width: 880px;
     height: 100%;
-    max-height: 880px;
-    padding: 128px;
+    max-height: 370px;
+    max-width: 500px;
+    padding: 20px;
     background-color: var(--color-primary-light);
     border-radius: 32px;
     /* overflow: auto; */
 
+    @media screen and (min-width: 768px) {
+        max-height: 480px;
+        max-width: 600px;
+        padding: 30px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-height: 880px;
+        max-width: 880px;
+        padding: 128px;
+    }
+
+    &::after {
+        @media screen and (min-width: 1280px) {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 186px;
+            height: 241px;
+            background-image: url('../../images/decorate.png');
+            content: '';
+        }
+    }
+
+    &__title {
+        font-size: 32px;
+        line-height: 1.5;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+            font-size: 48px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            font-size: 64px;
+        }
+    }
+
+    &__paragraph {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.5;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 24px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            font-size: 18px;
+            margin-bottom: 72px;
+        }
+    }
+
     &__form-field {
-        margin-bottom: 32px;
+        margin: 0 auto 16px;
+        max-width: 400px;
+
+        @media screen and (min-width: 768px) {
+            margin: 0 auto 24px;
+            max-width: 500px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            margin: 0 auto 32px;
+            max-width: 600px;
+        }
     }
 
     &__form-label {
@@ -38,12 +113,22 @@
     }
 
     &__form-input {
-        padding: 14px 42px;
+        padding: 8px 24px;
         width: 100%;
         border: 1px solid var(--color-secondary-dark);
         border-radius: 8px;
         background-color: transparent;
         color: var(--color-primary-dark);
+
+        @media screen and (min-width: 768px) {
+            padding: 12px 32px;
+            font-size: 14px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            padding: 16px 42px;
+            font-size: 16px;
+        }
     }
 
     &__form-input:focus {
@@ -62,7 +147,16 @@
 
     &__form-button {
         display: block;
-        margin: 0 auto 24px;
+        margin: 0 auto 12px;
+        cursor: pointer;
+
+        @media screen and (min-width: 768px) {
+            margin-bottom: 18px;
+        }
+
+        @media screen and (min-width: 1280px) {
+            margin-bottom: 24px;
+        }
     }
 
     &__form-terms {
@@ -78,11 +172,26 @@
         color: var(--color-primary-dark);
         text-underline-offset: 2px;
     }
-}
 
-.modal-btn-close {
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    border-radius: 50%;
+    &__btn-close {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+        
+        @media screen and (min-width: 768px) {
+            top: 24px;
+            right: 24px;
+        }
+    }
+        
+    &__close-icon {
+        fill: #31261A;
+        padding: 0;
+        margin: 0;
+    }
 }

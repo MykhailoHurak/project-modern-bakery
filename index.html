@@ -36,8 +36,7 @@
                         <use href="./images/icons.svg#icon-menu-mobile"></use>
                     </svg>
                 </button>
-                <div class="mob-menu is-open">
-                    <!-- <button class="mob-menu__btn-close mob-menu-btn-close" type="button">x</button> -->
+                <div class="mob-menu">
                     <button class="mob-menu__btn-close mob-menu-btn-close" type="button">
                         <svg class="footer__close-icon" width="32" height="32">
                             <use href="./images/icons.svg#icon-btn-close"></use>
@@ -275,28 +274,33 @@
     <!-- Modal -->
     <div class="backdrop is-hidden">
         <div class="modal">
-            <button class="modal-btn-close" type="button">x</button>
-            <h2 class="modal__title">Замовити дзвінок</h2>
-            <p class="modal__paragraph">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+            <!-- <button class="modal__btn-close modal-btn-close" type="button">x</button> -->
+            <button class="modal__btn-close modal-btn-close" type="button">
+                <svg class="modal__close-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-btn-close"></use>
+                </svg>
+            </button>
+            <h2 class="modal__title">Order a call</h2>
+            <p class="modal__paragraph">Leave a request and our specialist will contact you!</p>
             <form name="modal__form" autocomplete="off" novalidate>
                 <div class="modal__form-field">
-                    <label class="modal__form-label visually-hidden" for="user-name">Ім'я</label>
-                    <input class="modal__form-input" type="text" name="user-name" id="user-name" placeholder="Ім'я">
+                    <label class="modal__form-label visually-hidden" for="user-name">name</label>
+                    <input class="modal__form-input" type="text" name="user-name" id="user-name" placeholder="Name">
                 </div>
                 
                 <div class="modal__form-field">
-                    <label class="modal__form-label visually-hidden" for="user-tel">Телефон</label>
-                    <input class="modal__form-input" type="tel" name="user-tel" id="user-tel" placeholder="Телефон">
+                    <label class="modal__form-label visually-hidden" for="user-tel">Phone number</label>
+                    <input class="modal__form-input" type="tel" name="user-tel" id="user-tel" placeholder="Phone number">
                 </div>
                 
                 <div class="modal__form-field">
-                    <label class="modal__form-label visually-hidden" for="user-email">Електронна пошта</label>
-                    <input class="modal__form-input" type="email" name="user-email" id="user-email" placeholder="Електронна пошта">
+                    <label class="modal__form-label visually-hidden" for="user-email">Email</label>
+                    <input class="modal__form-input" type="email" name="user-email" id="user-email" placeholder="Email">
                 </div>
 
-                <button class="modal__form-button button" type="submit">Замовити дзвінок</button>
-                <p class="modal__form-terms">Натискаючи на кнопку я погоджуюсь з 
-                    <a class="modal__form-terms-link" href="#">політикою конфіденційності</a>
+                <button class="modal__form-button button" type="submit">Order a call</button>
+                <p class="modal__form-terms">By clicking the button, I agree to
+                    <a class="modal__form-terms-link" href="#">the privacy policy</a>
                 </p>
             </form>
         </div>
