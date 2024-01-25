@@ -26,6 +26,34 @@
     pointer-events: none;
 }
 
+.backdrop-hero {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s, visibility 0.3s;
+
+    @media screen and (min-width: 768px) {
+        padding: 20px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        padding: 72px;
+    }
+}
+
+.backdrop-hero.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
 .modal {
     position: relative;
     width: 100%;
