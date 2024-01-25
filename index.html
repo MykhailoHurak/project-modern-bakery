@@ -6,12 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern Bakery</title>
-    <!-- Fonts -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap" rel="stylesheet"> -->
-    <!-- Styles -->
-    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -60,7 +55,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero__title"><span class="text-color-primary-brand">Modern</span> bakery</h1>
-                <button class="hero__button button modal-btn-open" type="button">Order a call</button>
+                <button class="hero__button button js-modal-hero-btn-open" type="button">Order a call</button>
             </div>
         </section>
         <!-- Advantages -->
@@ -129,61 +124,141 @@
             </div>
         </section>
         <!-- Formats -->
-        <!-- <section class="formats section" id="formats">
+        <section class="formats section" id="formats">
             <div class="container">
-                <h2 class="formats__title section__title">Формати</h2>
-                <div class="formats__container">
-                    <button class="formats__btn" type="button">
+                <h2 class="formats__title section__title">Formats</h2>
+                <div class="formats__slider">
+                    <button class="swiper-button-prev formats__btn" type="button">
                         <svg class="formats__icon" width="16" height="16">
                             <use href="./images/icons.svg#icon-arrow"></use>
                         </svg>
                     </button>
-                    <ul class="formats__list">
-                        <li class="formats__item">
-                            <article class="format-card">
-                                <img class="format-card__image" src="./images/format-walrus.jpg" alt="Format Walrus">
-                                <h3 class="format-card__title">Walrus</h3>
-                                <div class="format-card__paragraph">
-                                    <p>Площа: до 120 м2</p>
-                                    <p>Меню: розширене меню</p>
-                                    <p>Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби</p>
-                                    <p>Посадкові місця: є</p>
-                                </div>
-                            </article>
-                        </li>
-                        <li class="formats__item">
-                            <article class="format-card">
-                                <img class="format-card__image" src="./images/format-horseshoe.jpg" alt="Format Horseshoe">
-                                <h3 class="format-card__title">Horseshoe</h3>
-                                <div class="format-card__paragraph">
-                                    <p>Площа: до 25 м2</p>
-                                    <p>Меню: найпопулярніші позиції меню</p>
-                                    <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
-                                    <p>Посадкові місця: відсутні</p>
-                                </div>
-                            </article>
-                        </li>
-                        <li class="formats__item">
-                            <article class="format-card">
-                                <img class="format-card__image" src="./images/format-handlebar.jpg" alt="Format Handlebar">
-                                <h3 class="format-card__title">Handlebar</h3>
-                                <div class="format-card__paragraph">
-                                    <p>Площа: до 15 м2</p>
-                                    <p>Меню: найпопулярніші позиції меню</p>
-                                    <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
-                                    <p>Посадкові місця: відсутні</p>
-                                </div>
-                            </article>
-                        </li>
-                    </ul>
-                    <button class="formats__btn formats__btn--rotate" type="button">
+                    <div class="swiper-container formats__container">
+                        <ul class="formats__list swiper-wrapper">
+                            <li class="formats__item swiper-slide">
+                                <article class="format-card">
+                                    <img class="format-card__image" src="./images/format-walrus.jpg" alt="Format Walrus">
+                                    <h3 class="format-card__title">Walrus</h3>
+                                    <div class="format-card__paragraph">
+                                        <p>Площа: до 120 м2</p>
+                                        <p>Меню: розширене меню</p>
+                                        <p>Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби</p>
+                                        <p>Посадкові місця: є</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="formats__item swiper-slide">
+                                <article class="format-card">
+                                    <img class="format-card__image" src="./images/format-horseshoe.jpg" alt="Format Horseshoe">
+                                    <h3 class="format-card__title">Horseshoe</h3>
+                                    <div class="format-card__paragraph">
+                                        <p>Площа: до 25 м2</p>
+                                        <p>Меню: найпопулярніші позиції меню</p>
+                                        <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
+                                        <p>Посадкові місця: відсутні</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="formats__item swiper-slide">
+                                <article class="format-card">
+                                    <img class="format-card__image" src="./images/format-handlebar.jpg" alt="Format Handlebar">
+                                    <h3 class="format-card__title">Handlebar</h3>
+                                    <div class="format-card__paragraph">
+                                        <p>Площа: до 15 м2</p>
+                                        <p>Меню: найпопулярніші позиції меню</p>
+                                        <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
+                                        <p>Посадкові місця: відсутні</p>
+                                    </div>
+                                </article>
+                            </li>
+                                                        <li class="formats__item swiper-slide">
+                                <article class="format-card">
+                                    <img class="format-card__image" src="./images/format-walrus.jpg" alt="Format Walrus">
+                                    <h3 class="format-card__title">Walrus</h3>
+                                    <div class="format-card__paragraph">
+                                        <p>Площа: до 120 м2</p>
+                                        <p>Меню: розширене меню</p>
+                                        <p>Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби</p>
+                                        <p>Посадкові місця: є</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="formats__item swiper-slide">
+                                <article class="format-card">
+                                    <img class="format-card__image" src="./images/format-horseshoe.jpg" alt="Format Horseshoe">
+                                    <h3 class="format-card__title">Horseshoe</h3>
+                                    <div class="format-card__paragraph">
+                                        <p>Площа: до 25 м2</p>
+                                        <p>Меню: найпопулярніші позиції меню</p>
+                                        <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
+                                        <p>Посадкові місця: відсутні</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="formats__item swiper-slide">
+                                <article class="format-card">
+                                    <img class="format-card__image" src="./images/format-handlebar.jpg" alt="Format Handlebar">
+                                    <h3 class="format-card__title">Handlebar</h3>
+                                    <div class="format-card__paragraph">
+                                        <p>Площа: до 15 м2</p>
+                                        <p>Меню: найпопулярніші позиції меню</p>
+                                        <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
+                                        <p>Посадкові місця: відсутні</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="formats__item swiper-slide">
+                                <article class="format-card">
+                                    <img class="format-card__image" src="./images/format-walrus.jpg" alt="Format Walrus">
+                                    <h3 class="format-card__title">Walrus</h3>
+                                    <div class="format-card__paragraph">
+                                        <p>Площа: до 120 м2</p>
+                                        <p>Меню: розширене меню</p>
+                                        <p>Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби</p>
+                                        <p>Посадкові місця: є</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="formats__item swiper-slide">
+                                <article class="format-card">
+                                    <img class="format-card__image" src="./images/format-horseshoe.jpg" alt="Format Horseshoe">
+                                    <h3 class="format-card__title">Horseshoe</h3>
+                                    <div class="format-card__paragraph">
+                                        <p>Площа: до 25 м2</p>
+                                        <p>Меню: найпопулярніші позиції меню</p>
+                                        <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
+                                        <p>Посадкові місця: відсутні</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="formats__item swiper-slide">
+                                <article class="format-card">
+                                    <img class="format-card__image" src="./images/format-handlebar.jpg" alt="Format Handlebar">
+                                    <h3 class="format-card__title">Handlebar</h3>
+                                    <div class="format-card__paragraph">
+                                        <p>Площа: до 15 м2</p>
+                                        <p>Меню: найпопулярніші позиції меню</p>
+                                        <p>Штат: 1 продавець, 1 пекар, 1 помічник пекаря</p>
+                                        <p>Посадкові місця: відсутні</p>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                        <div class="pagination">
+                            <span class="pagination__button"></span>
+                            <span class="pagination__button"></span>
+                            <span class="pagination__button"></span>
+                            <span class="pagination__button"></span>
+                        </div>
+                    </div>
+                    <button class="swiper-button-next formats__btn formats__btn--rotate" type="button">
                         <svg class="formats__icon" width="16" height="16">
                             <use href="./images/icons.svg#icon-arrow"></use>
                         </svg>
                     </button>
                 </div>
             </div>
-        </section> -->
+        </section>
         <!-- Contacts -->
         <section class="contacts section" id="contacts">
             <div class="container">
@@ -275,7 +350,7 @@
     <div class="backdrop is-hidden">
         <div class="modal">
             <!-- <button class="modal__btn-close modal-btn-close" type="button">x</button> -->
-            <button class="modal__btn-close modal-btn-close" type="button">
+            <button class="modal__btn-close modal-btn-close js-modal-hero-btn-close" type="button">
                 <svg class="modal__close-icon" width="32" height="32">
                     <use href="./images/icons.svg#icon-btn-close"></use>
                 </svg>
@@ -305,8 +380,11 @@
             </form>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/formats-slider.js"></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/modal-hero.js"></script>
 </body>
 
 </html>

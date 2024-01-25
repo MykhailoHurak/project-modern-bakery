@@ -5,3 +5,6 @@ https://www.figma.com/file/FY3qbgS0jtes4JUMD1mNFW/%D0%A1%D1%83%D1%87%D0%B0%D1%81
 
 Fonts "Poppins" from Google Webfonts Helper:
 https://gwfh.mranftl.com/fonts/poppins?subsets=latin
+
+SwiperJS for Format section:
+https://swiperjs.com/
