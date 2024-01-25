@@ -1,6 +1,15 @@
 .formats {
     &__title {
-        margin-bottom: 80px;
+        margin: 0 auto 24px;
+        text-align: center;
+    
+        @media screen and (min-width: 768px) {
+            margin: 0 auto 48px;
+        }
+    
+        @media screen and (min-width: 1280px) {
+            margin: 0 auto 80px;
+        }
     }
 
     &__slider {
